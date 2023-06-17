@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <script src="../script.js"></script>
+    <title>Computação Visual (CVIS)</title>
+  </head>
+  <body>
+    <main>
+      <img src="../assets/pgcomp.png" alt="PGCOMP" id="logo" />
+      <header>
+        <a href="../index.html">
+          <span class="material-symbols-outlined">
+            arrow_back
+          </span>
+        </a>
+        <h1>Computação Visual (CVIS)</h1>
+      </header>
+      <img src="../assets/cvis.jpg" alt="Computação Visual (CVIS)" class="imagem-subarea">
+      <p id="textheader">
+        A sub-área Computação Visual trata da aquisição, análise e síntese de
+        imagens por meio de computadores. A área integra conhecimentos em
+        computação gráfica, modelagem geométrica, processamento de imagens e
+        visão computacional, e possibilita o uso de modelos de alta
+        complexidade baseados em dados reais (imagens) em ambientes imersivos
+        de realidade aumentada, interfaces visuais inteligentes, sistemas de
+        percepção robótica, detecção/diagnóstico médico por imagens, entre
+        outras.
+      </p>
+      <div class="duascolunas"> <!-- duas colunas -->
+        <div class="coluna50"> <!-- coluna 1 -->
+          <div class="titulo-pesquisadores">
+            <p>Pesquisadores</p>
+          </div>
+          <div class="pesquisadores">
+            <!-- Antonio Lopes Apolinario Junior, Karl Apaza Agüero, Luciano Rebouças de Oliveira, Rubisley Lemes. -->
+
+            <div class="pesquisador">
+              <div class="imgpesquisador">
+                <img src="../assets/professores/apolinario.jpeg" alt="Antonio Lopes Apolinario Junior" />
+              </div>
+                <div class="infopesquisador">
+                  <h4>Antônio Lopes Apolinário Júnior</h4>
+                  <h5>antonio.apolinario@ufba.br</h5>
+              </div>
+            </div>
+            <div class="pesquisador">
+              <div class="imgpesquisador">
+                <img src="../assets/professores/karl.png" alt="Karl Apaza Agüero" />
+              </div>
+              <div class="infopesquisador">
+                <h4>Karl Apaza Agüero</h4>
+                <h5>kaguero@ufba.br</h5>
+              </div>
+            </div>
+            <div class="pesquisador">
+              <div class="imgpesquisador">
+                <img src="../assets/professores/luciano.png" alt="Luciano Rebouças de Oliveira" />
+              </div>
+              <div class="infopesquisador">
+                <h4>Luciano Rebouças de Oliveira</h4>
+                <h5>lrebouca@ufba.br</h5>
+              </div>
+            </div>            
+          </div>
+        </div> <!-- fim coluna 1 -->
+
+        <div class="coluna50"> <!-- coluna 2 -->
+          <div class="form"> <!-- formulário de contato -->
+            <h2>Entrar em contato</h2>
+            <div class="input-item"> <!-- selecionar docente p contato -->
+              <select name="docente" id="docente">
+                <option disabled selected value="">
+                  Selecione docente para contato
+                </option>
+                <option value="antonio-apolinario">Antônio Lopes Apolinário Júnior</option>
+                <option value="karl-apaza">Karl Apaza Agüero</option>
+                <option value="luciano-reboucas">Luciano Rebouças de Oliveira</option>
+              </select>
+              <span id="errorMsgDocente"></span>
+            </div>
+
+            <div class="input-item">
+              <input type="text" id="assunto" placeholder="Assunto da mensagem" />
+              <span id="errorMsgAssunto"></span>
+            </div>
+
+            <div class="input-item">
+              <textarea
+                name="campo"
+                id="campo"
+                cols="30"
+                rows="5"
+                placeholder="Escreva aqui sua mensagem"
+              ></textarea>
+              <span id="errorMsgCampo"></span>
+            </div>
+            <div class="input-item">
+              <button class="input-button" onclick="javascript: enviarForm();">
+                Enviar
+              </button>
+              <span id="successMsg"></span>
+            </div>
+          </div>
+        </div> <!-- fim coluna 2 -->
+
+      </div> <!-- fim duas colunas -->
+      <footer>
+        <p>IC - INSTITUTO DE COMPUTAÇÃO/UFBA</p>
+        <p>Avenida Milton Santos, s/n - Campus de Ondina, PAF 2 - Salvador - Bahia, CEP 40.170-110</p>
+        <p>E-mail: ceapg-ic@ufba.br</p>
+      </footer>
+    </main>
+  </body>
+</html>

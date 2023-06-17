@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../script.js"></script>
+    <title>Inteligencia Computacional e Otimização (ICOT)</title>
+  </head>
+  <body>
+    <main>
+      <img src="../assets/pgcomp.png" alt="PGCOMP" id="logo" />
+      <header>
+        <a href="../index.html">
+            <span class="material-symbols-outlined">
+              arrow_back
+            </span>
+          </a>
+        <h1>Inteligencia Computacional e Otimização (ICOT)</h1>
+      </header>
+      <img src="../assets/icot.jpg" alt="Computação Visual (CVIS)" class="imagem-subarea">
+      <p id="textheader">
+        Estudos em Inteligência Computacional envolvem o desenvolvimento de técnicas computacionais flexíveis, 
+        a aplicação destas técnicas para resolução de problemas e a modelagem de processos cognitivos e 
+        inteligentes. São encontrados em sistemas inteligentes capacidades de adaptação, aprendizado, raciocínio, 
+        autonomia, percepção, ação, dentre outras.<br><br>A área de Otimização estuda a escolha do melhor elemento 
+        pertencente a um conjunto de elementos, baseando-se na avaliação de uma função objetivo (a qual estabelece 
+        um critério de comparação entre os elementos). Nosso grupo trabalha na elaboração de modelos matemáticos e 
+        algoritmos para diferentes problemas de otimização. Dentre as técnicas investigadas, podem-se destacar 
+        programação inteira mista, otimização combinatória, heurísticas inteligentes e métodos híbridos (combinando 
+        diferentes técnicas). As áreas de aplicação priorizadas pelo grupo são otimização de processos de produção 
+        e problemas de logística em geral, problemas de escalonamento e problemas em teoria dos grafos.
+      </p>
+      <div class="duascolunas"> <!-- duas colunas -->
+        <div class="coluna50"> <!-- coluna 1 -->
+          <div class="titulo-pesquisadores">
+            <p>Pesquisadores</p>
+          </div>
+          <div class="pesquisadores">
+            <!-- Antonio Lopes Apolinario Junior, Karl Apaza Agüero, Luciano Rebouças de Oliveira, Rubisley Lemes. -->
+
+            <div class="pesquisador">
+              <div class="imgpesquisador">
+                <img src="../assets/professores/rafael.png" alt="Rafael Augusto de Melo" />
+              </div>
+                <div class="infopesquisador">
+                  <h4>Rafael Augusto de Melo</h4>
+                  <h5>melo@dcc.ufba.br</h5>
+              </div>
+            </div>
+            <div class="pesquisador">
+              <div class="imgpesquisador">
+                <img src="../assets/professores/ricardo.png" alt="Ricardo Araújo Rios" />
+              </div>
+              <div class="infopesquisador">
+                <h4>Ricardo Araújo Rios</h4>
+                <h5>ricardoar@ufba.br</h5>
+              </div>
+            </div>
+            <div class="pesquisador">
+              <div class="imgpesquisador">
+                <img src="../assets/professores/tatiane.png" alt="Tatiane Nogueira Rios" />
+              </div>
+              <div class="infopesquisador">
+                <h4>Tatiane Nogueira Rios</h4>
+                <h5>tatiane.nogueira@ufba.br</h5>
+              </div>
+            </div>            
+          </div>
+        </div> <!-- fim coluna 1 -->
+
+        <div class="coluna50"> <!-- coluna 2 -->
+          <div class="form"> <!-- formulário de contato -->
+            <h2>Entrar em contato</h2>
+            <div class="input-item"> <!-- selecionar docente p contato -->
+              <select name="docente" id="docente">
+                <option disabled selected value="">
+                  Selecione docente para contato
+                </option>
+                <option value="antonio-apolinario">Rafael Augusto de Melo</option>
+                <option value="karl-apaza">Ricardo Araújo Rios</option>
+                <option value="luciano-reboucas">Tatiane Nogueira Rios</option>
+              </select>
+              <span id="errorMsgDocente"></span>
+            </div>
+
+            <div class="input-item">
+              <input type="text" id="assunto" placeholder="Assunto da mensagem" />
+              <span id="errorMsgAssunto"></span>
+            </div>
+
+            <div class="input-item">
+              <textarea
+                name="campo"
+                id="campo"
+                cols="30"
+                rows="5"
+                placeholder="Escreva aqui sua mensagem"
+              ></textarea>
+              <span id="errorMsgCampo"></span>
+            </div>
+            <div class="input-item">
+              <button class="input-button" onclick="javascript: enviarForm();">
+                Enviar
+              </button>
+              <span id="successMsg"></span>
+            </div>
+          </div>
+        </div> <!-- fim coluna 2 -->
+
+      </div> <!-- fim duas colunas -->
+      <footer>
+        <p>IC - INSTITUTO DE COMPUTAÇÃO/UFBA</p>
+        <p>Avenida Milton Santos, s/n - Campus de Ondina, PAF 2 - Salvador - Bahia, CEP 40.170-110</p>
+        <p>E-mail: ceapg-ic@ufba.br</p>
+      </footer>
+    </main>
+  </body>
+</html>
